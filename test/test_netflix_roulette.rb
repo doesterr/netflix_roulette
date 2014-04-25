@@ -1,7 +1,4 @@
-require 'coveralls'
-Coveralls.wear!
-require "test/unit"
-require "netflix_roulette"
+require "test_helper"
 
 class NetflixRouletteTest < Test::Unit::TestCase
   

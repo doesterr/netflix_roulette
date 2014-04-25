@@ -1,0 +1,89 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://netflixroulette.net/api/api.php?title=Breaking%20Bad&year=0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 25 Apr 2014 20:48:37 GMT
+      Content-Type:
+      - text/plain
+      Content-Length:
+      - '635'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d4cc58d885d515ef67cd24d8f7c93cbee1398458917490; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.netflixroulette.net; HttpOnly
+      X-Powered-By:
+      - PHP/5.5.1
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Cf-Ray:
+      - 120d670a5d330a30-VIE
+    body:
+      encoding: US-ASCII
+      string: ! '{"unit":6545,"show_id":70143836,"show_title":"Breaking Bad","release_year":"2008","rating":"4.5","category":"Dramas\n","show_cast":"Bryan
+        Cranston, Anna Gunn, Aaron Paul, Betsy Brandt, R.J. Mitte, Dean Norris, Bob
+        Odenkirk, Steven Michael Quezada, Jonathan Banks, Giancarlo Esposito","director":"","summary":"Emmy
+        winner Bryan Cranston stars as Walter White, a high school science teacher
+        who learns that he has terminal lung cancer and teams with a former student
+        to manufacture and sell high-quality crystal meth to secure his family''s
+        future.","poster":"http:\/\/cdn-2.nflximg.com\/en_us\/boxshots\/ghd\/70143836.jpg","mediatype":1}'
+    http_version: 
+  recorded_at: Fri, 25 Apr 2014 20:48:33 GMT
+- request:
+    method: get
+    uri: http://netflixroulette.net/api/api.php?title=Breaking%20Bad&year=2020
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Fri, 25 Apr 2014 20:48:37 GMT
+      Content-Type:
+      - text/plain
+      Content-Length:
+      - '13'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=dc2af3d30d26cf10588b0a7ed08cf3a8b1398458917659; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.netflixroulette.net; HttpOnly
+      X-Powered-By:
+      - PHP/5.5.1
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Cf-Ray:
+      - 120d670b583f0a30-VIE
+    body:
+      encoding: US-ASCII
+      string: ! '{"error":404}'
+    http_version: 
+  recorded_at: Fri, 25 Apr 2014 20:48:33 GMT
+recorded_with: VCR 2.2.4

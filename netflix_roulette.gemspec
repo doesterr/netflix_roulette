@@ -12,5 +12,7 @@ Gem::Specification.new do |s|
   s.license       = 'MIT'
   s.add_development_dependency "rake"
   s.add_development_dependency "coveralls"
+  s.add_development_dependency "webmock"
+  s.add_development_dependency "vcr"
   s.required_ruby_version = '>= 1.9.2'
 end
