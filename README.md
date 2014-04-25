@@ -1,4 +1,18 @@
+[GV img]: https://badge.fury.io/rb/netflix_roulette.png
+[BS img]: https://travis-ci.org/doesterr/netflix_roulette.png
+[DS img]: https://gemnasium.com/doesterr/netflix_roulette.png
+[CC img]: https://codeclimate.com/github/doesterr/netflix_roulette.png
+
+[Gem Version]: https://rubygems.org/gems/netflix_roulette
+[Build Status]: https://travis-ci.org/doesterr/netflix_roulette
+[Dependency Status]: https://gemnasium.com/doesterr/netflix_roulette
+[Code Climate]: https://codeclimate.com/github/doesterr/netflix_roulette
+
 # netflix_roulette
+[![Gem Version][GV img]][Gem Version]
+[![Build Status][BS img]][Build Status]
+[![Dependency Status][DS img]][Dependency Status]
+[![Code Climate][CC img]][Code Climate]
 
 A simple Wrapper for the Netflix Roulette API (http://netflixroulette.net/api/)
 
