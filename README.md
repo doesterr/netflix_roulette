@@ -1,4 +1,13 @@
+[GV img]: https://badge.fury.io/rb/netflix_roulette.png
+[BS img]: https://travis-ci.org/doesterr/netflix_roulette.png
+
+[Gem Version]: https://rubygems.org/gems/netflix_roulette
+[Build Status]: https://travis-ci.org/doesterr/netflix_roulette
+
+
 # netflix_roulette
+[![Gem Version][GV img]][Gem Version]
+[![Build Status][BS img]][Build Status]
 
 A simple Wrapper for the Netflix Roulette API (http://netflixroulette.net/api/)
 
