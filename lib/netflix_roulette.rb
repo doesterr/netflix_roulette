@@ -58,17 +58,3 @@ class NetflixRoulette
     end
   end
 end
-
-# nr = NetflixRoulette::Client.new "Breaking Bad"
-# puts nr.fetch
-# 
-# puts NetflixRoulette.get_media_rating("Breaking Bad")
-# puts NetflixRoulette.get_media_poster("Breaking Bad")
-# puts NetflixRoulette.get_media_type("Breaking Bad")
-# puts NetflixRoulette.get_media_release_year("Breaking Bad")
-# puts NetflixRoulette.get_media_cast("Breaking Bad")
-# puts NetflixRoulette.get_media_category("Breaking Bad")
-# puts NetflixRoulette.get_media_summary("Breaking Bad")
-# puts NetflixRoulette.get_media_director("Breaking Bad")
-# puts NetflixRoulette.get_netflix_id("Breaking Bad")
-# puts NetflixRoulette.get_all_data("Breaking Bad")
