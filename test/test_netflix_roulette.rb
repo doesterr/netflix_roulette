@@ -15,7 +15,7 @@ class NetflixRouletteTest < Test::Unit::TestCase
   end
 
   def test_get_media_poster_found
-    assert_equal "http://cdn-2.nflximg.com/en_us/boxshots/ghd/70143836.jpg", NetflixRoulette.get_media_poster("Breaking Bad")
+    assert_equal "http://netflixroulette.net/api/posters/70143836.jpg", NetflixRoulette.get_media_poster("Breaking Bad")
   end
   
   def test_get_media_poster_not_found
@@ -47,7 +47,7 @@ class NetflixRouletteTest < Test::Unit::TestCase
   end
   
   def test_get_media_category_found
-    assert_equal "Dramas\n", NetflixRoulette.get_media_category("Breaking Bad")
+    assert_equal "TV Shows", NetflixRoulette.get_media_category("Breaking Bad")
   end
   
   def test_get_media_category_not_found
@@ -78,28 +78,53 @@ class NetflixRouletteTest < Test::Unit::TestCase
     assert_equal "Unable to locate data", NetflixRoulette.get_netflix_id("Breaking Bad", 2020)
   end
   
+  def test_get_runtime_found
+    assert_equal "45 min", NetflixRoulette.get_runtime("Breaking Bad")
+  end
+  
+  def test_get_runtime_not_found
+    assert_equal "Unable to locate data", NetflixRoulette.get_runtime("Breaking Bad", 2020)
+  end
+  
   def test_get_all_data_found
     assert_equal(
       {
-        "unit"        => 6545,
+        "unit"        => 7968,
         "show_id"     => 70143836,
         "show_title"  => "Breaking Bad",
         "release_year"=> "2008",
         "rating"      => "4.5",
-        "category"    => "Dramas\n",
+        "category"    => "TV Shows",
         "show_cast"   => "Bryan Cranston, Anna Gunn, Aaron Paul, Betsy Brandt, R.J. Mitte, Dean Norris, Bob Odenkirk, Steven Michael Quezada, Jonathan Banks, Giancarlo Esposito",
         "director"    => "",
         "summary"     => "Emmy winner Bryan Cranston stars as Walter White, a high school science teacher who learns that he has terminal lung cancer and teams with a former student to manufacture and sell high-quality crystal meth to secure his family's future.",
-        "poster"      => "http://cdn-2.nflximg.com/en_us/boxshots/ghd/70143836.jpg",
-        "mediatype"   => 1
+        "poster"      => "http://netflixroulette.net/api/posters/70143836.jpg",
+        "mediatype"   => 1,
+        "runtime"     => "45 min"
       },
       NetflixRoulette.get_all_data("Breaking Bad")
     )
   end
   
+  def test_get_media_for_actor
+    assert_block do
+      NetflixRoulette.get_media_for_actor("Nicolas Cage").all? do |media|
+        media["show_cast"] =~ /Nicolas Cage/
+      end
+    end
+  end
+  
+  def test_get_media_for_director
+    assert_block do
+      NetflixRoulette.get_media_for_director("Quentin Tarantino").all? do |media|
+        media["director"] =~ /Quentin Tarantino/
+      end
+    end
+  end
+  
   class NetflixRoulette::ClientTest < Test::Unit::TestCase
     def test_version
-      assert_equal "5.0", NetflixRoulette::Client.new("Breaking Bad").version
+      assert_equal "5.0", NetflixRoulette::Client.new.version
     end
   end
 end

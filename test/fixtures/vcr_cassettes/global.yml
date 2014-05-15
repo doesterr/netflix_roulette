@@ -19,33 +19,32 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 25 Apr 2014 20:48:37 GMT
+      - Thu, 15 May 2014 22:55:39 GMT
       Content-Type:
-      - text/plain
+      - application/json
       Content-Length:
-      - '635'
+      - '648'
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=d4cc58d885d515ef67cd24d8f7c93cbee1398458917490; expires=Mon, 23-Dec-2019
+      - __cfduid=d206fe634464f9f55b6a6fd04ae56fe141400194538987; expires=Mon, 23-Dec-2019
         23:50:00 GMT; path=/; domain=.netflixroulette.net; HttpOnly
-      X-Powered-By:
-      - PHP/5.5.1
       Access-Control-Allow-Origin:
       - ! '*'
       Cf-Ray:
-      - 120d670a5d330a30-VIE
+      - 12b2ec9caf750551-VIE
     body:
       encoding: US-ASCII
-      string: ! '{"unit":6545,"show_id":70143836,"show_title":"Breaking Bad","release_year":"2008","rating":"4.5","category":"Dramas\n","show_cast":"Bryan
-        Cranston, Anna Gunn, Aaron Paul, Betsy Brandt, R.J. Mitte, Dean Norris, Bob
-        Odenkirk, Steven Michael Quezada, Jonathan Banks, Giancarlo Esposito","director":"","summary":"Emmy
-        winner Bryan Cranston stars as Walter White, a high school science teacher
-        who learns that he has terminal lung cancer and teams with a former student
-        to manufacture and sell high-quality crystal meth to secure his family''s
-        future.","poster":"http:\/\/cdn-2.nflximg.com\/en_us\/boxshots\/ghd\/70143836.jpg","mediatype":1}'
+      string: ! '{"unit":7968,"show_id":70143836,"show_title":"Breaking Bad","release_year":"2008","rating":"4.5","category":"TV
+        Shows","show_cast":"Bryan Cranston, Anna Gunn, Aaron Paul, Betsy Brandt, R.J.
+        Mitte, Dean Norris, Bob Odenkirk, Steven Michael Quezada, Jonathan Banks,
+        Giancarlo Esposito","director":"","summary":"Emmy winner Bryan Cranston stars
+        as Walter White, a high school science teacher who learns that he has terminal
+        lung cancer and teams with a former student to manufacture and sell high-quality
+        crystal meth to secure his family''s future.","poster":"http:\/\/netflixroulette.net\/api\/posters\/70143836.jpg","mediatype":1,"runtime":"45
+        min"}'
     http_version: 
-  recorded_at: Fri, 25 Apr 2014 20:48:33 GMT
+  recorded_at: Thu, 15 May 2014 22:55:38 GMT
 - request:
     method: get
     uri: http://netflixroulette.net/api/api.php?title=Breaking%20Bad&year=2020
@@ -65,25 +64,184 @@ http_interactions:
       Server:
       - cloudflare-nginx
       Date:
-      - Fri, 25 Apr 2014 20:48:37 GMT
+      - Thu, 15 May 2014 22:55:39 GMT
       Content-Type:
-      - text/plain
+      - application/json
       Content-Length:
-      - '13'
+      - '78'
       Connection:
       - keep-alive
       Set-Cookie:
-      - __cfduid=dc2af3d30d26cf10588b0a7ed08cf3a8b1398458917659; expires=Mon, 23-Dec-2019
+      - __cfduid=d9b17726c550dd2c1853a56a1c80f5def1400194539115; expires=Mon, 23-Dec-2019
         23:50:00 GMT; path=/; domain=.netflixroulette.net; HttpOnly
-      X-Powered-By:
-      - PHP/5.5.1
       Access-Control-Allow-Origin:
       - ! '*'
       Cf-Ray:
-      - 120d670b583f0a30-VIE
+      - 12b2ec9d71c60551-VIE
     body:
       encoding: US-ASCII
-      string: ! '{"error":404}'
+      string: ! '{"errorcode":404,"message":"Sorry! We couldn''t find a movie with
+        that title!"}'
     http_version: 
-  recorded_at: Fri, 25 Apr 2014 20:48:33 GMT
+  recorded_at: Thu, 15 May 2014 22:55:38 GMT
+- request:
+    method: get
+    uri: http://netflixroulette.net/api/api.php?actor=Nicolas%20Cage
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Thu, 15 May 2014 22:55:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '4156'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=da6e9b85698e69b9f0d71254de71dc00a1400194539297; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.netflixroulette.net; HttpOnly
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Cf-Ray:
+      - 12b2ec9e9f280551-VIE
+    body:
+      encoding: US-ASCII
+      string: ! '[{"unit":636,"show_id":643557,"show_title":"It Could Happen to You","release_year":"1994","rating":"3.4","category":"Comedies","show_cast":"Nicolas
+        Cage, Bridget Fonda, Rosie P\u00e9rez, Wendell Pierce, Isaac Hayes, V\u00edctor
+        Rojas, Seymour Cassel, Stanley Tucci, J.E. Freeman","director":"Andrew Bergman","summary":"In
+        this charming romantic comedy based on a true story, a coffee-shop waitress
+        gets a life-changing tip when a beat cop comes up short on pocket change and
+        promises her half of his potential winnings from a lottery ticket.","poster":"http:\/\/netflixroulette.net\/api\/posters\/643557.jpg","mediatype":0,"runtime":"101
+        min"},{"unit":800,"show_id":70143241,"show_title":"The Croods","release_year":"2013","rating":"4.1","category":"Children
+        & Family Movies","show_cast":"Nicolas Cage, Emma Stone, Ryan Reynolds, Catherine
+        Keener, Cloris Leachman, Clark Duke, Chris Sanders, Randy Thom","director":"Kirk
+        De Micco, Chris Sanders","summary":"When an earthquake obliterates their cave,
+        an unworldly prehistoric family is forced to journey through unfamiliar terrain
+        in search of a new home. But things for pessimistic dad Grug go from bad to
+        worse when his daughter meets a clever cave boy.","poster":"http:\/\/netflixroulette.net\/api\/posters\/70143241.jpg","mediatype":0,"runtime":"98
+        min"},{"unit":2651,"show_id":70131173,"show_title":"Christmas Carol: The Movie","release_year":"2001","rating":"3.5","category":"Children
+        & Family Movies","show_cast":"Simon Callow, Rhys Ifans, Kate Winslet, Nicolas
+        Cage, Jane Horrocks, Michael Gambon, Juliet Stevenson, Robert Llewellyn, Iain
+        Jones, Colin McFarlane","director":"Jimmy T. Murakami","summary":"Nicolas
+        Cage, Kate Winslet and Simon Callow provide voices for this animated version
+        of the classic Charles Dickens tale about the miserable Ebenezer Scrooge,
+        who learns the true meaning of Christmas from three ghosts who confront him
+        in the night. The film uses live-action sequences to bookend the story, and
+        a mouse in the animated portion helps younger viewers follow the story. Winslet
+        sings the film''s main theme.","poster":"http:\/\/netflixroulette.net\/api\/posters\/70131173.jpg","mediatype":0,"runtime":"77
+        min"},{"unit":3863,"show_id":70257818,"show_title":"Stolen","release_year":"2012","rating":"3.7","category":"Action
+        & Adventure","show_cast":"Nicolas Cage, Josh Lucas, Danny Huston, Malin Akerman,
+        Sami Gayle, Edrick Browne, Mark Valley, Barry Shabaka Henley, M.C. Gainey","director":"Simon
+        West","summary":"Master thief Will Montgomery is ready to leave his criminal
+        past behind. But when his daughter is kidnapped, he has no choice but to reunite
+        with his old partner in crime and pull off one last heist.","poster":"http:\/\/netflixroulette.net\/api\/posters\/70257818.jpg","mediatype":0,"runtime":"96
+        min"},{"unit":5221,"show_id":70135880,"show_title":"Seeking Justice","release_year":"2011","rating":"3.8","category":"Action
+        & Adventure","show_cast":"Nicolas Cage, January Jones, Guy Pearce, Harold
+        Perrineau, Jennifer Carpenter, Xander Berkeley, IronE Singleton, Wayne P\u00e9re,
+        Marcus Lyle Brown, Jason Davis","director":"Roger Donaldson","summary":"After
+        his wife is brutally raped, English teacher Will Gerard is approached by a
+        man from a vigilante group who offers to exact revenge on the perpetrator.
+        But once the deed is done, Will discovers that the group expects a certain
+        favor in return.","poster":"http:\/\/netflixroulette.net\/api\/posters\/70135880.jpg","mediatype":0,"runtime":"105
+        min"},{"unit":6000,"show_id":70206627,"show_title":"Trespass","release_year":"2011","rating":"3.5","category":"Thrillers","show_cast":"Nicolas
+        Cage, Nicole Kidman, Ben Mendelsohn, Liana Liberato, Cam Gigandet, Jordana
+        Spiro, Dash Mihok, Emily Meade, Nico Tortorella, Brandon Belknap","director":"Joel
+        Schumacher","summary":"A husband and wife find themselves pushed to their
+        absolute limit when they''re held for ransom by brutal thugs who invade their
+        home. As tensions escalate and shocking revelations emerge, the couple is
+        forced to take ever-more desperate measures.","poster":"http:\/\/netflixroulette.net\/api\/posters\/70206627.jpg","mediatype":0,"runtime":"91
+        min"}]'
+    http_version: 
+  recorded_at: Thu, 15 May 2014 22:55:38 GMT
+- request:
+    method: get
+    uri: http://netflixroulette.net/api/api.php?director=Quentin%20Tarantino
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - ! '*/*'
+      User-Agent:
+      - Ruby
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - cloudflare-nginx
+      Date:
+      - Thu, 15 May 2014 22:55:39 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '3857'
+      Connection:
+      - keep-alive
+      Set-Cookie:
+      - __cfduid=d51d80725558261ff2a229e493adcfff31400194539410; expires=Mon, 23-Dec-2019
+        23:50:00 GMT; path=/; domain=.netflixroulette.net; HttpOnly
+      Access-Control-Allow-Origin:
+      - ! '*'
+      Cf-Ray:
+      - 12b2ec9f5eaa0551-VIE
+    body:
+      encoding: US-ASCII
+      string: ! '[{"unit":84,"show_id":60032563,"show_title":"Kill Bill: Vol. 2","release_year":"2004","rating":"3.8","category":"Action
+        & Adventure","show_cast":"Uma Thurman, David Carradine, Michael Madsen, Daryl
+        Hannah, Gordon Liu, Michael Parks, Perla Haney-Jardine, Helen Kim, Claire
+        Smithies, Clark Middleton","director":"Quentin Tarantino","summary":"The Bride
+        has three left on her rampage list: Budd, Elle Driver and Bill himself. But
+        when she arrives at Bill''s house, she''s in for a surprise.","poster":"http:\/\/netflixroulette.net\/api\/posters\/60032563.jpg","mediatype":0,"runtime":"137
+        min"},{"unit":87,"show_id":60031236,"show_title":"Kill Bill: Vol. 1","release_year":"2003","rating":"3.8","category":"Action
+        & Adventure","show_cast":"Uma Thurman, Lucy Liu, Vivica A. Fox, Daryl Hannah,
+        David Carradine, Michael Madsen, Julie Dreyfus, Chiaki Kuriyama, Sonny Chiba,
+        Gordon Liu","director":"Quentin Tarantino","summary":"An assassin is shot
+        by her ruthless employer, Bill, and other members of their assassination circle.
+        But she lives -- and plots her vengeance.","poster":"http:\/\/netflixroulette.net\/api\/posters\/60031236.jpg","mediatype":0,"runtime":"111
+        min"},{"unit":914,"show_id":880640,"show_title":"Pulp Fiction","release_year":"1994","rating":"4.1","category":"Oscar-winning
+        Movies","show_cast":"John Travolta, Samuel L. Jackson, Uma Thurman, Bruce
+        Willis, Harvey Keitel, Tim Roth, Amanda Plummer, Ving Rhames, Eric Stoltz,
+        Maria de Medeiros","director":"Quentin Tarantino","summary":"Weaving together
+        three stories featuring a burger-loving hit man, his philosophical partner
+        and a washed-up boxer, Quentin Tarantino influenced a generation of filmmakers
+        with this crime caper''s stylized, over-the-top violence and dark comic spirit.","poster":"http:\/\/netflixroulette.net\/api\/posters\/880640.jpg","mediatype":0,"runtime":"154
+        min"},{"unit":943,"show_id":60010514,"show_title":"Jackie Brown","release_year":"1997","rating":"3.7","category":"Dramas","show_cast":"Pam
+        Grier, Samuel L. Jackson, Robert Forster, Bridget Fonda, Michael Keaton, Robert
+        De Niro, Michael Bowen, Chris Tucker, Lisa Gay Hamilton, Tommy ''Tiny'' Lister","director":"Quentin
+        Tarantino","summary":"Jackie Brown is an aging flight attendant who smuggles
+        cash on the side. But when she''s busted and pressured to help with an investigation,
+        she plans to play the opposing forces against each other and walk away with
+        the dough.","poster":"http:\/\/netflixroulette.net\/api\/posters\/60010514.jpg","mediatype":0,"runtime":"154
+        min"},{"unit":1151,"show_id":902003,"show_title":"Reservoir Dogs","release_year":"1992","rating":"4.0","category":"Independent
+        Movies","show_cast":"Harvey Keitel, Tim Roth, Michael Madsen, Steve Buscemi,
+        Chris Penn, Lawrence Tierney, Edward Bunker, Quentin Tarantino, Randy Brooks,
+        Kirk Baltz","director":"Quentin Tarantino","summary":"Quentin Tarantino''s
+        directorial debut is raw, violent, often mimicked -- and unforgettable. A
+        botched robbery indicates a police informant, and the pressure mounts in the
+        aftermath at a warehouse. Crime begets violence as the survivors unravel.","poster":"http:\/\/netflixroulette.net\/api\/posters\/902003.jpg","mediatype":0,"runtime":"99
+        min"},{"unit":1463,"show_id":520179,"show_title":"Four Rooms","release_year":"1995","rating":"3.6","category":"Comedies","show_cast":"Tim
+        Roth, Antonio Banderas, Jennifer Beals, Bruce Willis, Paul Calderon, Madonna,
+        Marisa Tomei, Quentin Tarantino, Ione Skye, Lili Taylor","director":"Quentin
+        Tarantino, Robert Rodriguez, Allison Anders, Alexandre Rockwell","summary":"One
+        mad New Year''s Eve, an overwhelmed bellboy copes with witches and diabolical
+        children, gets caught in the middle of a sour relationship and settles a bloody
+        bet for members of a superstar''s entourage.","poster":"http:\/\/netflixroulette.net\/api\/posters\/520179.jpg","mediatype":0,"runtime":"98
+        min"}]'
+    http_version: 
+  recorded_at: Thu, 15 May 2014 22:55:38 GMT
 recorded_with: VCR 2.2.4

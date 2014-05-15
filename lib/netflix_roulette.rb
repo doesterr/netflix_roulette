@@ -12,15 +12,24 @@ class NetflixRoulette
       get_media_category:     "category",
       get_media_summary:      "summary",
       get_media_director:     "director",
-      get_netflix_id:         "show_id"
+      get_netflix_id:         "show_id",
+      get_runtime:            "runtime"
     }.each_pair do |method_name, key|
       define_method method_name do |title, year = 0|
-        client(title, year).fetch[key] || "Unable to locate data"
+        client(title: title, year: year).fetch[key] || "Unable to locate data"
       end
     end
     
     def get_all_data(title, year = 0)
-      client(title, year).fetch
+      client(title: title, year: year).fetch
+    end
+    
+    def get_media_for_actor(actor)
+      client(actor: actor).fetch
+    end
+    
+    def get_media_for_director(director)
+      client(director: director).fetch
     end
     
     def get_version
@@ -29,8 +38,8 @@ class NetflixRoulette
     
     private
     
-    def client(title, year)
-      Client.new(title, year)
+    def client(query)
+      Client.new query
     end
   end
   
@@ -38,11 +47,10 @@ class NetflixRoulette
     API_URL     = URI("http://netflixroulette.net/api/api.php")
     API_VERSION = "5.0"
     
-    attr_accessor :title, :year
-    
-    def initialize(title, year = 0)
-      @title  = title
-      @year   = year
+    def initialize(query = {})
+      { year: 0 }.merge(query) if query.has_key? :title
+      
+      @query = query
     end
 
     def version
@@ -51,7 +59,7 @@ class NetflixRoulette
 
     def fetch
       uri       = API_URL
-      uri.query = URI.encode_www_form({ title: title, year: year })
+      uri.query = URI.encode_www_form @query
       response  = Net::HTTP.get_response uri
 
       result = JSON.parse response.body
