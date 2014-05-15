@@ -83,4 +83,4 @@ breaking_bad["rating"]
 
 Add `"netflix_roulette"` gem to your Gemfile if you are using Bundler.
 
-Or install it manually via `gem install netflix_roulette` and add `require "netflix_roulette"` to you code.
+Or install it manually via `gem install netflix_roulette` and add `require "netflix_roulette"` to your code.
