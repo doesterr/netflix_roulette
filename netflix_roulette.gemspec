@@ -1,6 +1,6 @@
 Gem::Specification.new do |s|
   s.name        = 'netflix_roulette'
-  s.version     = '0.0.2'
+  s.version     = '1.0.0'
   s.date        = '2014-04-25'
   s.summary     = "API Wrapper for Netflix Roulette"
   s.description = "A simple interface to access the Netflix Roulette API http://netflixroulette.net/api/"
