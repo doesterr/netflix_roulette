@@ -57,6 +57,12 @@ NetflixRoulette.get_netflix_id("Breaking Bad")
 NetflixRoulette.get_runtime("Breaking Bad")
 #=> "45 min"
 
+NetflixRoulette.get_media_for_actor("Nicolas Cage")
+#=> All media with Nicolas Cage
+
+NetflixRoulette.get_media_for_director("Quentin Tarantino")
+#=> All media from Quentin Tarantino
+
 ```    
     
 Personally I don't like this approach for Ruby code, so the Client can also be accessed directly and always returns the entire response as a Hash:
