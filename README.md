@@ -53,13 +53,17 @@ NetflixRoulette.get_media_director("Breaking Bad")
 
 NetflixRoulette.get_netflix_id("Breaking Bad")
 #=> 70143836
+
+NetflixRoulette.get_runtime("Breaking Bad")
+#=> "45 min"
+
 ```    
     
 Personally I don't like this approach for Ruby code, so the Client can also be accessed directly and always returns the entire response as a Hash:
 
 ```ruby   
-client = NetflixRoulette::Client.new("Breaking Bad")
-#=> #<NetflixRoulette::Client:0x007fd8ac1c5de0 @title="Breaking Bad", @year=0>
+client = NetflixRoulette::Client.new(title: "Breaking Bad")
+#=> #<NetflixRoulette::Client:0x007fd8ac1c5de0 @query = { title: "Breaking Bad", year: 0 }>
 
 breaking_bad = client.fetch
 #=> {"unit"=>6545, "show_id"=>70143836, "show_title"=>"Breaking Bad", "release_year"=>"2008", "rating"=>"4.5", "category"=>"Dramas\n", "show_cast"=>"Bryan Cranston, Anna Gunn, Aaron Paul, Betsy Brandt, R.J. Mitte, Dean Norris, Bob Odenkirk, Steven Michael Quezada, Jonathan Banks, Giancarlo Esposito", "director"=>"", "summary"=>"Emmy winner Bryan Cranston stars as Walter White, a high school science teacher who learns that he has terminal lung cancer and teams with a former student to manufacture and sell high-quality crystal meth to secure his family's future.", "poster"=>"http://cdn-2.nflximg.com/en_us/boxshots/ghd/70143836.jpg", "mediatype"=>1}
