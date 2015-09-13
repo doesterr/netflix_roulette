@@ -44,7 +44,7 @@ class NetflixRoulette
   end
   
   class Client
-    API_URL     = URI("http://netflixroulette.net/api/api.php")
+    API_URL     = URI("https://netflixroulette.net/api/api.php")
     API_VERSION = "5.0"
     
     def initialize(query = {})
